@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #78797a, #141329b6);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.icono-3d {
+    font-size: 4vw;
+    max-width: 10px; /* Tamaño máximo del icono en píxeles */
+    color: #ffffff;
+    position: absolute;
+    top: 3vh;
+    right: 6vw;
+    animation: desvanecimiento 3s ease-in-out;
+}
+
+@keyframes desvanecimiento {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #812f2f;
+    text-align: center;
+    animation: desvanecimiento-h1 3s ease-in-out;
+}
+
+@keyframes desvanecimiento-h1 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; /* Agrega un margen inferior */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para los botones de navegación */
+.boton-nav {
+    display: inline-block;
+    padding: 10px 20px; /* Espacio interno alrededor del texto */
+    margin: 0 10px; /* Espacio externo entre botones */
+    background-color: #444; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.boton-nav:hover {
+    background-color: #666; /* Cambio de color de fondo al pasar el cursor */
+}
+
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Cambiar la dirección del flexbox para que los elementos se apilen verticalmente */
+    justify-content: space-around; /* Distribuir uniformemente los elementos a lo largo del contenedor */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    height: 100%; /* Ocupa toda la altura de la página */
+    width: 100%; /* Ocupa toda la anchura de la página */
+}
+
+.cuadro-imagen {
+    width: 900px; /* Ancho del cuadro de imagen */
+    height: 200px; /* Altura del cuadro de imagen */
+    margin-bottom: 20px; /* Margen inferior entre los cuadros de imagen */
+    background-color: #ddd; /* Color de fondo de los cuadros de imagen */
+    border: 2px solid #000000; /* Borde alrededor de los cuadros de imagen */
+    position: relative;
+    box-sizing: border-box; /* Incluir el borde en el cálculo del tamaño */
+    border-radius: 20px; /* Forma redondeada */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cuadro-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.boton-enlace {
+    text-decoration: none;
+}
+
+.cuadro-imagen:hover {
+    transform: scale(1.05);
+}
+
+.boton-enlace {
+    text-decoration: none;
+}
+
